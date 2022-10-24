@@ -3,11 +3,11 @@
 void Check (int num)
 {
     if (num / 10000 == num % 10 && num / 1000 % 10 == num % 100 / 10)
-    Console.Write("Да");
+    Console.Write($"Число {num} является палиндромом");
     else
-    Console.Write("Нет");     
+    Console.Write($"Число {num} не является палиндромом");     
 }
-Console.Write("Напишите пятизначное число число: ");
+Console.Write("Введите пятизначное число: ");
 int num = Convert.ToInt32(Console.ReadLine());
 Check(num);
 */
